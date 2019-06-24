@@ -1,61 +1,31 @@
-var randResult
-var score = 0;
+// var ranNum = document.querySelector('randomNum')
+// var wins = document.querySelector('wins')
+// var losses = document.querySelector('losses')
 
-// var restart = function () {
-// a universal function that generates a random integer(must clarify the two numbers when used)
-var rand = function generateRandomInteger(min, max) {
-  return Math.floor(min + Math.random()*(max + 1 - min))
-}
+// var gem1 = document.querySelector('#gem1')
+// var gem2 = document.querySelector('#gem2')
+// var gem3 = document.querySelector('#gem3')
+// var gem4 = document.querySelector('#gem4')
 
-// this variable will be used only for the starting random number
-randResult = rand(19,120);
+// // var gems = [gem1, gem2, gem3, gem4]
 
-//displays the random starting result for the user when the html loads
-$(".randomNum").append('Random Result: ' + randResult);
+// // function randomGenerator(min, max) {
+// //   return Math.floor(Math.random() * (max - min) ) + min
+// // }
 
-for (var i = 0; i < 4; i++) {
-  // Using the universal var rand this generates a random number between 1-12, 4 times
-  gemRand = rand(1,12);
+// ranGem = Math.floor(Math.random() * 12) + 1
 
-// adds 4 buttons on the html
-// sets gemData to gemRand so that it holds the value
-var button = $("<button>gem</button>");
-    button.attr({
-      "class": 'button',
-      "gemData": gemRand
-    });
+// // ranNum.innerHTML = Math.floor(Math.random() * 120) + 19
 
-$(".gems").append(button);
+// // ranNum.innerHTML = 5
 
-//display your score when html loads
-$(".score").html("Your Score " + 0);
+// // document.ranNum.innerHTML = 2222
+// document.getElementById('randomNum').innerHTML = Math.floor(Math.random() * 120) + 19
+// // RandomNumber function () {
+// // }
 
-// }
-};
-// reset();
+// document.querySelector('#gem1').addEventListener('click', function () {
+// ranGem = Math.floor(Math.random() * 12) + 1
 
-$(".button").on('click', function () {
-  // grabing the data from gemData to create a variable "gemScore"
-  var gemScore = parseInt($(this).attr('gemData'));
-  //This console log is to show which numbers were allocated to each button
-  console.log(gemScore);
-
-  score += gemScore;
-  //Update score every button click
-  $(".score").html("Your Score: " + score);
-
-  //if your score is greater than the random starting result you lost
-  if(score > randResult) {
-    $(".lose").html("You Lost..")
-    score = 0;
-    // reset();
-  }
-//if your score is equal to the random starting result you won
-  else if(score === randResult) {
-    $(".win").html("You Win!!")
-    score = 0;
-    // reset();
-  }
-
-});
-
+//     console.log(ranGem)
+// })
