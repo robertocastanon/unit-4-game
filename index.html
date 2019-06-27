@@ -17,37 +17,37 @@
 				Click here for more Info
 			  </button>
 		  <div class="collapse" id="collapseExample">
-				<ul>
+				<ul style="list-style-type:none">
           <li>A random number will appear at the start of the game.</li>
-          <li>There will be four clickable crystals. By clicking on one you will add a specific apmount of points to your score.</li>
+          <li>There will be four clickable crystals. By clicking on one you will add a specific amount of points to your score.</li>
           <li>You win by matching your total score to the random number. You lose if your score goes above the random number.</li>
           <li>The value of each crystal is hidden from you until you click on it.</li>
           <li>Each time the game starts the game will change the value of each number.</li>
         </ul>
 			  </div>
     </div>
-    <div class="container text-center">
+    <div id="mainContainer" class="container text-center">
       <div class="row">
         <p class="col-sm-6">Random Number</p>
       </div>
       <div class="row">
-          <div class="col-sm-6 card"><h2 id=randomNum></h2></div>
+          <div class="col-sm-6 card"><h2 id=ranNum></h2></div>
           <div class="col-sm-3 card">
             <p id="wins">Wins: </p>
             <p id="losses">Losses: </p>
           </div>
       </div>
       <div class="row">
-        <div id="gem1" class="col-sm-2 card">gem 1</div>
-        <div id="gem2" class="col-sm-2 card">gem 2</div>
-        <div id="gem3" class="col-sm-2 card">gem 3</div>
-        <div id="gem4" class="col-sm-2 card">gem 4</div>
+        <img id="gem1" src="assets/images/purple-gem.png" class="col-sm-2 card"></img>
+        <img id="gem2" src="assets/images/pink-gem.png" class="col-sm-2 card"></img>
+        <img id="gem3" src="assets/images/blue-gem.png" class="col-sm-2 card"></img>
+        <img id="gem4" src="assets/images/green-gem.png" class="col-sm-2 card"></img>
       </div>
       <div class="row">
         <p class="col-sm-6">Your total score is:</p>
       </div>
       <div class="row">
-          <div id="totalScore" class="col-sm-6 card"><h2>7</h2></div>        
+          <div class="col-sm-6 card"><h2 id="totalScore"></h2></div>        
       </div>
 
 
